@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Abadejo (Pollachius pollachius)",
+    "size": "30"
+  },
+  {
+    "name": "Acedia (Dicologoglossa cuneata)",
+    "size": "15"
+  },
+  {
+    "name": "Aguja (Belone belone)",
+    "size": "25"
+  },
+  {
+    "name": "Anguila (Anguilla anguilla)",
+    "size": "(*)"
+  },
+  {
+    "name": "Arenque (Clupea harengus)",
+    "size": "20"
+  },
+  {
+    "name": "Atún rojo (Thunnus thynnus)",
+    "size": "6,4 kg"
+  },
+  {
+    "name": "Bacalao (Gadus morhua)",
+    "size": "35"
+  },
+  {
+    "name": "Besugo (Pagellus bogaraveo)",
+    "size": "25"
+  },
+  {
+    "name": "Boga (Boops boops)",
+    "size": "1 1"
+  },
+  {
+    "name": "Boquerón (Engraulis encrasicholus)",
+    "size": "12 (**)"
+  },
+  {
+    "name": "Buey (Cáncer pagurus)",
+    "size": "(*)"
+  },
+  {
+    "name": "Caballa, Estornino (Scomber spp)",
+    "size": "20"
+  },
+  {
+    "name": "Calamar (Loligo vulgaris)",
+    "size": "(*)"
+  },
+  {
+    "name": "Carbonero (Pollachius virens)",
+    "size": "35"
+  },
+  {
+    "name": "Centolla (Maja squinado)",
+    "size": "12"
+  },
+  {
+    "name": "Cigala (entera) (Nephrops norvegicus):",
+    "size": "Longitud cefalotórax 2, Longitud total 7"
+  },
+  {
+    "name": "Cigalas (colas)",
+    "size": "3,7"
+  },
+  {
+    "name": "Congrio (Conger conger)",
+    "size": "58"
+  },
+  {
+    "name": "Chopa (Spondyliosoma cantharus)",
+    "size": "23"
+  },
+  {
+    "name": "Dorada (Sparus aurata)",
+    "size": "19"
+  },
+  {
+    "name": "Eglefino (Melanogrammús aeglefinus)",
+    "size": "30"
+  },
+  {
+    "name": "Faneca (Trisopterus luscus)",
+    "size": "(*)"
+  },
+  {
+    "name": "Gallos (Lepidorhombus spp)",
+    "size": "20"
+  },
+  {
+    "name": "Jibias (Sepia spp)",
+    "size": "(*)"
+  },
+  {
+    "name": "Jurel (Trachurus trachurus)",
+    "size": "15"
+  },
+  {
+    "name": "Lenguado (Solea vulgaris)",
+    "size": "24"
+  },
+  {
+    "name": "Limanda (Limanda limanda)",
+    "size": "23"
+  },
+  {
+    "name": "Lisas (Mugil spp)",
+    "size": "20"
+  },
+  {
+    "name": "Lubina (Dicentrarchus labrax)",
+    "size": "36 (***)"
+  },
+  {
+    "name": "Maruca Azul (Molva dypterygia)",
+    "size": "70"
+  },
+  {
+    "name": "Maruca (Molva molva)",
+    "size": "63"
+  },
+  {
+    "name": "Mendo limón (Microstommus kitt)",
+    "size": "25"
+  },
+  {
+    "name": "Mendo (Gliptocephalus cynoglossus)",
+    "size": "28"
+  },
+  {
+    "name": "Merlán (Merlangus merlangus)",
+    "size": "23"
+  },
+  {
+    "name": "Merluza (Merluccius merluccius)",
+    "size": "27"
+  },
+  {
+    "name": "Palometa negra o japuta (Brama brama)",
+    "size": "16"
+  },
+  {
+    "name": "Pargo (Pagrus pagrus)",
+    "size": "15"
+  },
+  {
+    "name": "Patudo (Thunnus obesus)",
+    "size": "3,2 kg"
+  },
+  {
+    "name": "Platija (Platichthys flesus)",
+    "size": "25"
+  },
+  {
+    "name": "Rabil (Thunnus albacares)",
+    "size": "3,2 kg"
+  },
+  {
+    "name": "Rape (Lophius piscatorius, L. Budegassa)",
+    "size": "(*)"
+  },
+  {
+    "name": "Ramal (Scophthalmus rhombus)",
+    "size": "30"
+  },
+  {
+    "name": "Rodaballo (Psetta maxima)",
+    "size": "30"
+  },
+  {
+    "name": "Sabalos (Alosa spp)",
+    "size": "30"
+  },
+  {
+    "name": "Salema (Sarpa salpa)",
+    "size": "15"
+  },
+  {
+    "name": "Salmón (Salmo salar)",
+    "size": "50"
+  },
+  {
+    "name": "Salmonete de roca (Mullus surmuletus)",
+    "size": "15"
+  },
+  {
+    "name": "Sardina (Sardina pilchardus)",
+    "size": "11"
+  },
+  {
+    "name": "Solla (Pleuronectes platessa)",
+    "size": "25"
+  },
+  {
+    "name": "Trucha marisca o reo (Salmo trutta)",
+    "size": "25"
+  },
+  {
+    "name": "Vieira (Pecten maximus)",
+    "size": "10"
+  }
+]

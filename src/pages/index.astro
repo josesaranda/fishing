@@ -1,15 +1,116 @@
 ---
+type Fish = {
+  name: string;
+  size: string;
+};
+
+import _data from "../data/cantabrico_noroeste_cadiz.json";
+const fishes: Fish[] = _data;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fishing</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header--title">Fishing</h1>
+        <h2 class="header--subtitle">
+          Tallas mínimas autorizadas para los caladeros del Cantábrico y
+          noroeste y del golfo de Cádiz
+        </h2>
+      </div>
+    </header>
+    <main class="main container">
+      <input
+        class="search"
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Buscar"
+      />
+      {
+        fishes.map((fish) => {
+          return (
+            <div class="fish">
+              <h2 class="fish--name">{fish.name}</h2>
+              <p class="fish--size">{fish.size}</p>
+            </div>
+          );
+        })
+      }
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>(*) Talla por determinar.</p>
+        <p>
+          (**) Excepto en la división IX, a), en la que la talla mínima es de 10
+          centímetros.
+        </p>
+        <p>
+          (***) Excepto en las divisiones 8a y 8b del Consejo Internacional para
+          la Exploración del Mar, tanto para la pesca profesional como para la
+          pesca recreativa, en las que la talla mínima es de 44 centímetros.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
+<style>
+  * {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header,
+  .footer {
+    padding: 16px;
+    background: #efefef;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .search {
+    margin-bottom: 10px;
+    padding: 16px;
+    min-width: 320px;
+  }
+</style>
+<script>
+  const search = document.getElementById("search") as HTMLInputElement;
+  const fishes = document.querySelectorAll(".fish");
+
+  search!.addEventListener("input", () => {
+    searchFish(search.value);
+  });
+
+  function searchFish(text: string) {
+    fishes.forEach((fish) => {
+      fish.classList.remove("hidden");
+      if (
+        !fish.children[0].innerHTML.toLowerCase().includes(text.toLowerCase())
+      ) {
+        fish.classList.add("hidden");
+      }
+    });
+  }
+</script>
