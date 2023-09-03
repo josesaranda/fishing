@@ -11,4 +11,4 @@ Fishing es una web app para consultar las tallas mínimas de peces para su captu
 [] Crear página principal
 [] Dar estilos usando SCSS y [BEM model](https://getbem.com/introduction/)
 [] Añadir manifest.json
-[] Añadir meta tags para el SEOx
+[] Añadir meta tags para el SEO
