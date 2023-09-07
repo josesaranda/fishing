@@ -4,6 +4,8 @@ type Fish = {
   size: string;
 };
 
+import "../styles/main.css";
+
 import _data from "../data/cantabrico_noroeste_cadiz.json";
 const fishes: Fish[] = _data;
 ---
@@ -17,22 +19,33 @@ const fishes: Fish[] = _data;
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header--container">
         <h1 class="header--title">Fishing</h1>
-        <h2 class="header--subtitle">
-          Tallas mínimas autorizadas para los caladeros del Cantábrico y
-          noroeste y del golfo de Cádiz
-        </h2>
       </div>
     </header>
+    <nav class="tabs">
+      <ul class="tabs--container">
+        <li class="tab active">Cantábrico y Cádiz</li>
+        <li class="tab">Mediterráneo</li>
+        <li class="tab">Canarias</li>
+      </ul>
+    </nav>
+    <div class="search">
+      <div class="search--container">
+        <input
+          class="search--input"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Buscar"
+        />
+      </div>
+    </div>
     <main class="main container">
-      <input
-        class="search"
-        type="search"
-        name="search"
-        id="search"
-        placeholder="Buscar"
-      />
+      <h2 class="header--subtitle">
+        Tallas mínimas autorizadas para los caladeros del Cantábrico y noroeste
+        y del golfo de Cádiz
+      </h2>
       {
         fishes.map((fish) => {
           return (
@@ -60,41 +73,6 @@ const fishes: Fish[] = _data;
     </footer>
   </body>
 </html>
-<style>
-  * {
-    margin: 0;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .header {
-    position: sticky;
-    top: 0;
-  }
-
-  .header,
-  .footer {
-    padding: 16px;
-    background: #efefef;
-  }
-
-  .main {
-    padding: 16px;
-  }
-
-  .search {
-    margin-bottom: 10px;
-    padding: 16px;
-    min-width: 320px;
-  }
-</style>
 <script>
   const search = document.getElementById("search") as HTMLInputElement;
   const fishes = document.querySelectorAll(".fish");
