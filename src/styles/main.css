@@ -39,6 +39,7 @@
   max-width: var(--container-width);
   margin: auto;
   list-style-type: none;
+  overflow-x: scroll;
 }
 
 .tab {
