@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Aguja (Belone belone)",
+    "localName": "Agujón",
+    "size": "25"
+  },
+  {
+    "name": "Aligote (Pagellus acarne)",
+    "localName": "Besuguito aligote",
+    "size": "20"
+  },
+  {
+    "name": "Atún rojo (Thunnus Thynnus)",
+    "localName": "Patudo",
+    "size": "6,4 kg"
+  },
+  {
+    "name": "Boga (Boops boops)",
+    "localName": "Boga",
+    "size": "11"
+  },
+  {
+    "name": "Boquerón (Engraulis encrasicholus)",
+    "localName": "Boquerón, anchoa",
+    "size": "9"
+  },
+  {
+    "name": "Cabrilla (Serranus cabrilla)",
+    "localName": "Cabrilla, cabrilla reina",
+    "size": "19"
+  },
+  {
+    "name": "Cachucho (Dentex macrophtalmus)",
+    "localName": "Antoñito, dientón",
+    "size": "22"
+  },
+  {
+    "name": "Chopa (Spondyliosoma cantharus)",
+    "localName": "Chopa, negrón",
+    "size": "23"
+  },
+  {
+    "name": "Dorada (Sparus auratus)",
+    "localName": "Dorada, zapata morisca",
+    "size": "19"
+  },
+  {
+    "name": "Estornino (Scomber japonicus)",
+    "localName": "Caballa",
+    "size": "18"
+  },
+  {
+    "name": "Gitano (Mycteroperca fusca)",
+    "localName": "Abade, abadejo",
+    "size": "35"
+  },
+  {
+    "name": "Jureles (Trachurus spp)",
+    "localName": "Chicharro",
+    "size": "12"
+  },
+  {
+    "name": "Lisa (Mugil auratus)",
+    "localName": "Lisa amarilla",
+    "size": "14"
+  },
+  {
+    "name": "Vieja colorada (Sparisoma cretense)",
+    "localName": "Vieja",
+    "size": "22"
+  },
+  {
+    "name": "Lubina (Dicentrarchus labrax)",
+    "localName": "Lubina",
+    "size": "22"
+  },
+  {
+    "name": "Mero (Epinephelus marginatus)",
+    "localName": "Mero",
+    "size": "45"
+  },
+  {
+    "name": "Mojarra (Diplodus vulgaris)",
+    "localName": "Seifia, seifio",
+    "size": "22"
+  },
+  {
+    "name": "Morena negra (Muraena augusti)",
+    "localName": "",
+    "size": "56"
+  },
+  {
+    "name": "Murión (Gymnothorax unicolor)",
+    "localName": "",
+    "size": "57"
+  },
+  {
+    "name": "Pagel (Pagellus erythrinus)",
+    "localName": "Breca",
+    "size": "22"
+  },
+  {
+    "name": "Palometa negra o japuta (Brama brama)",
+    "localName": "Pez tontón",
+    "size": "16"
+  },
+  {
+    "name": "Pargo (Pagrus pagrus)",
+    "localName": "Bocinegro",
+    "size": "28"
+  },
+  {
+    "name": "Patudo (Thunnus obesus)",
+    "localName": "Tuna",
+    "size": "3,2 kg"
+  },
+  {
+    "name": "Rabil (Thunnus aibacares)",
+    "localName": "Rabil",
+    "size": "3,2 kg"
+  },
+  {
+    "name": "Salema (Sarpa salpa)",
+    "localName": "Salema, salpa",
+    "size": "24"
+  },
+  {
+    "name": "Salmonetes (Mullus spp)",
+    "localName": "Salmón, salmonete",
+    "size": "15"
+  },
+  {
+    "name": "Sama de pluma (Dentex filosus)",
+    "localName": "Sama, serruda, pargo macho",
+    "size": "35"
+  },
+  {
+    "name": "Sardina (Sardina pilchardus)",
+    "localName": "Sardina",
+    "size": "11"
+  },
+  {
+    "name": "Sargo (Diplodus sargus)",
+    "localName": "Sargo, sargo blanco",
+    "size": "22"
+  },
+  {
+    "name": "Serrano imperial (Serranus atricauda)",
+    "localName": "Cabrilla negra o cabrilla ruana",
+    "size": "20"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Aguja (Belone belone)",
+    "size": "25"
+  },
+  {
+    "name": "Almeja (Venerupis spp)",
+    "size": "2,5"
+  },
+  {
+    "name": "Atún rojo (Thunnus thynnus)",
+    "size": "80 cm o 10 kg de peso"
+  },
+  {
+    "name": "Bacaladilla (Micromesistius poutassou).",
+    "size": "15"
+  },
+  {
+    "name": "Boga (Boops boops)",
+    "size": "11"
+  },
+  {
+    "name": "Bogavante (Homarus gammarus):",
+    "size": "Longitud cefalotórax 8,5"
+  },
+  {
+    "name": "Boquerón (Engraulis encrasicholus)",
+    "size": "9"
+  },
+  {
+    "name": "Caballa (Scomber scombrus)",
+    "size": "18"
+  },
+  {
+    "name": "Capellán/mollera (Trisopterus minutus capelanus)",
+    "size": "11"
+  },
+  {
+    "name": "Cigala (Nephrops norvegicus):",
+    "size": "Longitud cefalotórax 2, Longitud total 7"
+  },
+  {
+    "name": "Cherna (Polyprion americanus)",
+    "size": "45"
+  },
+  {
+    "name": "Chirla (Venus spp)",
+    "size": "2,5"
+  },
+  {
+    "name": "Dorada (Sparus aurata)",
+    "size": "20"
+  },
+  {
+    "name": "Estornino (Scomber japonicus)",
+    "size": "18"
+  },
+  {
+    "name": "Gallo (Lepidorhombus spp)",
+    "size": "15"
+  },
+  {
+    "name": "Jurel (Trachurus spp)",
+    "size": "12"
+  },
+  {
+    "name": "Langosta (Palinuridae)",
+    "size": "24"
+  },
+  {
+    "name": "Langostino (Panaeux kerathurus)",
+    "size": "10"
+  },
+  {
+    "name": "Lenguado (Solea vulgaris)",
+    "size": "20"
+  },
+  {
+    "name": "Lisa (Mugil spps)",
+    "size": "16"
+  },
+  {
+    "name": "Lubina (Dicentrarchus labrax)",
+    "size": "23"
+  },
+  {
+    "name": "Merluza (Merluccius merluccius)",
+    "size": "20"
+  },
+  {
+    "name": "Mero (Epinephelus spp)",
+    "size": "45"
+  },
+  {
+    "name": "Pagel, besugo (Pagellus spp)",
+    "size": "12"
+  },
+  {
+    "name": "Palometa negra o japuta (Brama brama).",
+    "size": "16"
+  },
+  {
+    "name": "Pargo (Pagrus pagrus)",
+    "size": "18"
+  },
+  {
+    "name": "Rape (Lophius spp)",
+    "size": "30"
+  },
+  {
+    "name": "Salema (Sarpa salpa)",
+    "size": "15"
+  },
+  {
+    "name": "Salmonete (Mullus spp)",
+    "size": "11"
+  },
+  {
+    "name": "Sardina (Sardina pilchardus)",
+    "size": "11"
+  },
+  {
+    "name": "Sargo (Diplodus spp)",
+    "size": "15"
+  },
+  {
+    "name": "Vieira (Pecten spp)",
+    "size": "10"
+  }
+]

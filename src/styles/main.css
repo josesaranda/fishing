@@ -40,6 +40,8 @@
   margin: auto;
   list-style-type: none;
   overflow-x: scroll;
+  overflow-y: hidden;
+  height: 60px;
 }
 
 .tab {
@@ -86,4 +88,36 @@
 
 .hidden {
   display: none;
+}
+
+.fishes {
+  display: none;
+  padding: 16px;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.fishes.active {
+  display: block;
+}
+
+.fishes--title {
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+
+.fish {
+  padding: 16px;
+}
+
+.fish:not(:last-child) {
+  border-bottom: 4px solid var(--bg-primary);
+}
+
+.fish--name {
+  font-size: 32px;
+}
+
+.fish--size {
+  font-size: 24px;
 }

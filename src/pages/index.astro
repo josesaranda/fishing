@@ -6,8 +6,12 @@ type Fish = {
 
 import "../styles/main.css";
 
-import _data from "../data/cantabrico_noroeste_cadiz.json";
-const fishes: Fish[] = _data;
+import _dataCantabrico from "../data/cantabrico_noroeste_cadiz.json";
+import _dataMediterraneo from "../data/mediterraneo.json";
+import _dataCanarias from "../data/canarias.json";
+const fishesCantabrico: Fish[] = _dataCantabrico;
+const fishesMediterraneo: Fish[] = _dataMediterraneo;
+const fishesCanarias: Fish[] = _dataCanarias;
 ---
 
 <html lang="en">
@@ -25,9 +29,11 @@ const fishes: Fish[] = _data;
     </header>
     <nav class="tabs">
       <ul class="tabs--container">
-        <li class="tab active">Cantábrico y Cádiz</li>
-        <li class="tab">Mediterráneo</li>
-        <li class="tab">Canarias</li>
+        <li class="tab active" data-value="cantabricoycadiz">
+          Cantábrico y Cádiz
+        </li>
+        <li class="tab" data-value="mediterraneo">Mediterráneo</li>
+        <li class="tab" data-value="canarias">Canarias</li>
       </ul>
     </nav>
     <div class="search">
@@ -42,20 +48,52 @@ const fishes: Fish[] = _data;
       </div>
     </div>
     <main class="main container">
-      <h2 class="header--subtitle">
-        Tallas mínimas autorizadas para los caladeros del Cantábrico y noroeste
-        y del golfo de Cádiz
-      </h2>
-      {
-        fishes.map((fish) => {
-          return (
-            <div class="fish">
-              <h2 class="fish--name">{fish.name}</h2>
-              <p class="fish--size">{fish.size}</p>
-            </div>
-          );
-        })
-      }
+      <div id="cantabricoycadiz" class="fishes active">
+        <h2 class="fishes--title">
+          Tallas mínimas autorizadas para los caladeros del Cantábrico y
+          noroeste y del golfo de Cádiz
+        </h2>
+        {
+          fishesCantabrico.map((fish) => {
+            return (
+              <div class="fish">
+                <h2 class="fish--name">{fish.name}</h2>
+                <p class="fish--size">{fish.size}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+      <div id="mediterraneo" class="fishes">
+        <h2 class="fishes--title">
+          Tallas mínimas autorizadas para el caladero mediterráneo
+        </h2>
+        {
+          fishesMediterraneo.map((fish) => {
+            return (
+              <div class="fish">
+                <h2 class="fish--name">{fish.name}</h2>
+                <p class="fish--size">{fish.size}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+      <div id="canarias" class="fishes">
+        <h2 class="fishes--title">
+          Tallas mínimas autorizadas para el caladero canario
+        </h2>
+        {
+          fishesCanarias.map((fish) => {
+            return (
+              <div class="fish">
+                <h2 class="fish--name">{fish.name}</h2>
+                <p class="fish--size">{fish.size}</p>
+              </div>
+            );
+          })
+        }
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -75,13 +113,13 @@ const fishes: Fish[] = _data;
 </html>
 <script>
   const search = document.getElementById("search") as HTMLInputElement;
-  const fishes = document.querySelectorAll(".fish");
 
   search!.addEventListener("input", () => {
     searchFish(search.value);
   });
 
   function searchFish(text: string) {
+    const fishes = document.querySelectorAll(`.fish`);
     fishes.forEach((fish) => {
       fish.classList.remove("hidden");
       if (
@@ -91,4 +129,18 @@ const fishes: Fish[] = _data;
       }
     });
   }
+
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelector(".tab.active")?.classList.remove("active");
+      tab.classList.add("active");
+
+      const fishesId = tab.getAttribute("data-value") as string;
+      document.querySelector(".fishes.active")?.classList.remove("active");
+      document.getElementById(fishesId)?.classList.add("active");
+
+      searchFish(search.value);
+    });
+  });
 </script>
