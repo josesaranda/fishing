@@ -17,13 +17,51 @@ const fishesCanarias: Fish[] = _dataCanarias;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <title>Fishing</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta
+      name="description"
+      content="Fishing es una web de pesca para consultar las tallas mínimas de capturas"
+    />
+
+    <meta
+      property="og:title"
+      content="fishing | Tallas mínimas autorizadas para la captura"
+    />
+    <meta property="og:url" content="https://fishing.josesaranda.es" />
+    <meta
+      property="og:image"
+      content="https://fishing.josesaranda.es/images/thumbnail.jpg"
+    />
+
+    <meta
+      name="twitter:title"
+      content="fishing | Tallas mínimas autorizadas para captura"
+    />
+    <meta name="twitter:site" content="@josesaranda" />
+    <meta name="twitter:creator" content="@josesaranda" />
+    <meta
+      name="twitter:description"
+      content="Tallas mínimas autorizadas para la captura"
+    />
+    <meta
+      name="twitter:image"
+      content="https://fishing.josesaranda.es/images/thumbnail.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <header class="header">
       <div class="header--container">
+        <img
+          class="header--logo"
+          src="/images/logo.png"
+          alt="Logo"
+          width="48px"
+          height="48px"
+        />
         <h1 class="header--title">Fishing</h1>
       </div>
     </header>
@@ -96,13 +134,13 @@ const fishesCanarias: Fish[] = _dataCanarias;
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <p>(*) Talla por determinar.</p>
-        <p>
+      <div class="footer--container">
+        <p class="footer--info">(*) Talla por determinar.</p>
+        <p class="footer--info">
           (**) Excepto en la división IX, a), en la que la talla mínima es de 10
           centímetros.
         </p>
-        <p>
+        <p class="footer--info">
           (***) Excepto en las divisiones 8a y 8b del Consejo Internacional para
           la Exploración del Mar, tanto para la pesca profesional como para la
           pesca recreativa, en las que la talla mínima es de 44 centímetros.
@@ -113,13 +151,13 @@ const fishesCanarias: Fish[] = _dataCanarias;
 </html>
 <script>
   const search = document.getElementById("search") as HTMLInputElement;
+  let fishes = document.querySelectorAll(`.fishes.active .fish`);
 
   search!.addEventListener("input", () => {
     searchFish(search.value);
   });
 
   function searchFish(text: string) {
-    const fishes = document.querySelectorAll(`.fish`);
     fishes.forEach((fish) => {
       fish.classList.remove("hidden");
       if (
@@ -140,6 +178,7 @@ const fishesCanarias: Fish[] = _dataCanarias;
       document.querySelector(".fishes.active")?.classList.remove("active");
       document.getElementById(fishesId)?.classList.add("active");
 
+      fishes = document.querySelectorAll(`.fishes.active .fish`);
       searchFish(search.value);
     });
   });

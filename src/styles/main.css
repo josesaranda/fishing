@@ -26,6 +26,9 @@
 .header--container {
   max-width: var(--container-width);
   margin: auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .tabs {
@@ -80,10 +83,12 @@
   font-size: 20px;
   width: 100%;
   padding-inline: var(--padding-inline);
+  border-bottom: 4px solid transparent;
 }
 
 .search--input:focus-within {
   outline: 0;
+  border-bottom: 4px solid var(--bg-secondary);
 }
 
 .hidden {
@@ -120,4 +125,18 @@
 
 .fish--size {
   font-size: 24px;
+}
+
+.footer {
+  background: var(--bg-primary);
+}
+
+.footer--container {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 16px;
+}
+
+.footer--info {
+  margin-bottom: 10px;
 }
